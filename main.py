@@ -37,8 +37,8 @@ records.load_data()
 
 # print(records.filter_students_by_grade(90))
 
-# print(records.calulate_average_grade_for_class("Science"))
-# print(records.calulate_average_grade_for_class("Maths"))
+# print(records.calculate_average_grade_for_class("Science"))
+# print(records.calculate_average_grade_for_class("Maths"))
 
-# print(records.calulate_average_grade_for_class("Science", ["2020"]))
-# print(records.calulate_average_grade_for_class("Maths", [])
+# print(records.calculate_average_grade_for_class("Science", ["2020"]))
+# print(records.calculate_average_grade_for_class("Maths", [])
