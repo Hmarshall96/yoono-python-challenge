@@ -1,4 +1,4 @@
-The project is a simple student records management system. The system reads and writes student data to a JSON file and allows basic operations such as calculating average grades and filtering students based on their grades.
+The project is a simple student records management system. The system reads student data drom a JSON file and allows basic operations such as calculating average grades and filtering students based on their grades.
 
 However, there are bugs in the existing implementation, and the system lacks critical features.
 
