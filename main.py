@@ -1,13 +1,14 @@
-import json
+year_2020 = {
+    "students": [
+        {"name": "Alice", "grades": [85, 90, 78]},
+        {"name": "Bob", "grades": []},
+        {"name": "Charlie", "grades": [95, 100]}
+    ]
+}
 
 class StudentRecords:
-    def __init__(self, file_path):
-        self.file_path = file_path
-
-    def load_data(self):
-        """Load student data from a JSON file."""
-        with open(self.file_path, "r") as f:
-            self.data = json.load(f)
+    def __init__(self, student_data):
+        self.data = student_data
 
     def calculate_average_grade_for_student(self, name):
         """Calculate the average grade of a student."""
@@ -26,10 +27,7 @@ class StudentRecords:
         return result
 
 
-file_path = "data/year-2020.json"
-
-records = StudentRecords(file_path)
-records.load_data()
+records = StudentRecords(year_2020)
 
 # print(records.calculate_average_grade_for_student("Alice"))
 # print(records.calculate_average_grade_for_student("Bob"))
